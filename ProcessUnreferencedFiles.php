@@ -150,8 +150,8 @@ class ProcessUnreferencedFiles {
 		foreach ( $index_files as $filename => $key ) {
 			if ( file_exists( $filename ) ) {
 				$index_filename = $filename;
+				break;
 			}
-			break;
 		}
 
 		if ( is_null( $index_filename ) ) {
